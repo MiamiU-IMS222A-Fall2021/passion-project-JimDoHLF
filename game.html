@@ -5,37 +5,102 @@
         
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jim Do Portfolio</title>
+    <title>Some Games I Made</title>
     <meta name="author" content="Jim Do">
     <meta name="description" content="This is my Portfolio">
-    <link ref="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="Container">
+        <nav class="BookmarkNavBar" >
+           <!-- bookmark menu section -->
+            <ul id="BookmarkNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">My Games</a></li>
+                <li><a href="research.html">My Researches</a></li>
+                <li><a href="skill.html">My Skillset</a></li>
+                <li><a href="academic.html">My Academic</a></li>
+            </ul>
+                
+            <h1 id="MenuButton">
+                <a href="javascript:void(0)" class="openNav" onclick="ChangeNav()">Menu</a>
+            </h1>
+            
+        </nav>
+
         <header>
 
         </header>
 
         <div class="Starter">
             <h1>Welcome to my Portfolio!</h1>
-            <h2>By: Jim Do</h2>
+            <h2>Section: Games</h2>
         </div>
 
         <div class="Intro">
             <blockquote>
-                My name is Jim Do. [INTRO]
+                I have been developing several games, some of which are below:
             </blockquote>
         </div>
 
-        <div class = "Body">
-
+        <div class = "Content">
+            <!--Segment class will be the central piece of the website, with most of the Javascript-->
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')">
+ 
+                </a>
+                <div class="OpenSeg" id="GameNav1">
+                    HELLO THERE!
+                </div>
+            </div>
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')">
+ 
+                </a>
+                <div class="OpenSeg" id="GameNav2">
+                    HELLO THERE!
+                </div>
+            </div>
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav3')" onmouseleave="ClosePan('GameNav3')">
+ 
+                </a>
+                <div class="OpenSeg" id="GameNav3">
+                    HELLO THERE!
+                </div>
+            </div>
         </div>
 
         <footer>
-
+            Thank you
         </footer>
     </div>
+
+    <script>
+        function OpenPan(panID)
+        {
+            document.getElementById(panID).style.flex = "3.4";
+        }
+
+        function ClosePan(panID)
+        {
+            document.getElementById(panID).style.flex = "0";
+        }
+
+        function ChangeNav()
+        {
+            if (document.getElementById("BookmarkNav").style.height > "0px")
+            {
+                document.getElementById("BookmarkNav").style.height = "0px"
+            }
+            else
+            {
+                document.getElementById("BookmarkNav").style.height = "500px";
+            }
+        }
+
+    </script>
 </body>
 
 </html>
