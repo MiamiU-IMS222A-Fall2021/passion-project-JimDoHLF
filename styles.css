@@ -20,7 +20,7 @@ body{
     top:0px;
     left:5%;
     border-style: solid;
-    width: 27%;
+    width: 22%;
 }
 
 #BookmarkNav{
@@ -28,6 +28,23 @@ body{
     overflow-y:hidden;
     background-color: #ff4440;
     transition: 0.5s;
+}
+
+.BookmarkNavBar ul{
+    left: -50px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.BookmarkNavBar ul li{
+    margin-top: 20px;
+    list-style-type: none;
+    font-size: 20pt;
+    font-family: 'Georgia, serif';
+
+    text-align: center;
+    flex: 1;
 }
 
 #MenuButton{
@@ -68,3 +85,19 @@ body{
     flex:0; /* open value = 3.4 */
     overflow-x:hidden;
 }
+
+.Starter{
+    padding-top: 40px;
+    padding-left: 22%;
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    border-style:dashed;
+    border-radius: 1px;
+    border-width: 5px;
+    border-color:whitesmoke; /* hardly seen border adds a touch on the background */
+    background-color: lightyellow;
+}
+
+/* Conditional CSS */
