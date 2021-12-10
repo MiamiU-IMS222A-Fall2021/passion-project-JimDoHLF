@@ -5,7 +5,7 @@
         
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jim Do Portfolio</title>
+    <title>Some Games I Made</title>
     <meta name="author" content="Jim Do">
     <meta name="description" content="This is my Portfolio">
     <link rel="stylesheet" href="styles.css">
@@ -37,61 +37,66 @@
 
         <div class="Starter">
             <h1>Welcome to my Portfolio!</h1>
-            <h2>Section: Introduction</h2>
+            <h2>Section: Games</h2>
         </div>
 
         <div class="Intro">
             <blockquote>
-                My name is Hai Long Do. You can call me Jim
+                I have been developing several games, some of which are below:
             </blockquote>
         </div>
 
         <div class = "Content">
             <!--Segment class will be the central piece of the website, with most of the Javascript-->
             <div class="Segment">
-                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')">
-                    <iframe src="game.html" title="My games"></iframe>
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')" onmousedown="OpenPage('https://halfad.itch.io/fusit')">
+                    <!--Click on image to go to website-->
+                    <img src="images\Fusit.png" alt="Fusit game by Halfad">
                 </a>
                 <a class="OpenSeg" id="GameNav1" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')">
                     <!--This segment has javascript function OpenPan so users can hover the cursor over and keep the preview open-->
-                    <h2>Game Page preview</h2>
-                    <h3>List of the games I have shipped!</h3>
+                    <h2>Fusit: Submission for GMTK GameJam 2021</h2>
+                    <h3>Joined Together, 2 drones
+
+                        Join the fragments while controlling 2 drones at the same time. Survive and score as many points as possible.
+                        Click on the image to go to the game link. </h3>
                 </a>
             </div>
             
             <!--Segment class will be the central piece of the website, with most of the Javascript-->
             <div class="Segment">
-                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')">
-                    <iframe src="research.html" title="My researches"></iframe>
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')" onmousedown="OpenPage('https://play.google.com/store/apps/details?id=com.HLFSoftware.AntiCo')">
+                    <img src="images/antico.webp" alt="Antico game by HLF Production">
                 </a>
                 <a class="OpenSeg" id="GameNav2" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')">
                     <!--This segment has javascript function OpenPan so users can hover the cursor over and keep the preview open-->
-                    <h2>Researches Page preview</h2>
-                    <h3>Several research and analysis papers I have written!</h3>
+                    <h2>AntiCo.: Independent game published in 2020</h2>
+                    <h3>In a quarantined city, hospitals are closed for lacking sufficient supplies. Save as many lives as you can. Give everyone masks to wear. Spray any virus on your way. Send sick patients to the AHS: Aerial Hospital System.
+                        Save as many lives as you can. Brag about your scores on the internet.</h3>
                 </a>
             </div>
-            
+
             <!--Segment class will be the central piece of the website, with most of the Javascript-->
             <div class="Segment">
                 <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav3')" onmouseleave="ClosePan('GameNav3')">
-                    <iframe src="skill.html" title="My skills"></iframe>
+ 
                 </a>
                 <a class="OpenSeg" id="GameNav3" href="javascript:void(0)" onmouseenter="OpenPan('GameNav3')" onmouseleave="ClosePan('GameNav3')">
                     <!--This segment has javascript function OpenPan so users can hover the cursor over and keep the preview open-->
-                    <h2>Skills Page preview</h2>
-                    <h3>List of my Skillset!</h3>
+                    <h2>Project: the Garden</h2>
+                    <h3>To be released soon!</h3>
                 </a>
             </div>
-            
+
             <!--Segment class will be the central piece of the website, with most of the Javascript-->
             <div class="Segment">
                 <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav4')" onmouseleave="ClosePan('GameNav4')">
-                    <iframe src="academic.html" title="My games"></iframe>
+ 
                 </a>
                 <a class="OpenSeg" id="GameNav4" href="javascript:void(0)" onmouseenter="OpenPan('GameNav4')" onmouseleave="ClosePan('GameNav4')">
                     <!--This segment has javascript function OpenPan so users can hover the cursor over and keep the preview open-->
-                    <h2>Academic Page preview</h2>
-                    <h3>List of my academic achivements!</h3>
+                    <h2>Project: Reaper</h2>
+                    <h3>To be released soon!</h3>
                 </a>
             </div>
         </div>
@@ -104,7 +109,7 @@
     <script>
         function OpenPan(panID)
         {
-            document.getElementById(panID).style.flex = "3.4";
+            document.getElementById(panID).style.flex = "2.7";
         }
 
         function ClosePan(panID)
@@ -122,6 +127,11 @@
             {
                 document.getElementById("BookmarkNav").style.height = "500px";
             }
+        }
+
+        function OpenPage(pageUrl)
+        {
+            window.open(pageUrl);
         }
 
     </script>

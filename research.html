@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jim Do Portfolio</title>
+    <meta name="author" content="Jim Do">
+    <meta name="description" content="This is my Portfolio">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="Container">
+        <nav class="BookmarkNavBar" >
+           <!-- bookmark menu section -->
+            <ul id="BookmarkNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">My Games</a></li>
+                <li><a href="research.html">My Researches</a></li>
+                <li><a href="skill.html">My Skillset</a></li>
+                <li><a href="academic.html">My Academic</a></li>
+            </ul>
+                
+            <div id="MenuButton">
+                <a href="javascript:void(0)" class="openNav" onclick="ChangeNav()">
+                    <h2>Menu</h2>
+                </a>
+            </div>
+            
+        </nav>
+
+        <header>
+
+        </header>
+
+        <div class="Starter">
+            <h1>Welcome to my Portfolio!</h1>
+            <h2>Section: Researches</h2>
+        </div>
+
+        <div class="Intro">
+            <blockquote>
+                I have been writing some short research and analysis papers, some of which are below:
+            </blockquote>
+        </div>
+
+        <div class = "Content">
+            <!--Segment class will be the central piece of the website, with most of the Javascript-->
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')" onmousedown="OpenPage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.epicgames.com%2Fstore%2Fen-US%2Fp%2Fgenshin-impact&psig=AOvVaw2oFOOH_WPRHGSHyocg7oKK&ust=1639245465408000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCKD3urXn2fQCFQAAAAAdAAAAABAD')">
+                    <img src="images/GenshinImpact.jfif" alt="Genshin Impact">
+                </a>
+                <a class="OpenSeg" id="GameNav1" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')" onmousedown="OpenPage('https://docs.google.com/document/d/1LCfxv_ojhY6aM8vgsTYAXhnUQ9NC_ZfGNq9fqeZ1wTc/edit?usp=sharing')"> 
+                    <h2>Genshin Impact's rise in popularity</h2>
+                    <h3>Following 2020's lockdown, Genshin Impact was released by Mihoyo, rising to worldwide popularity within a month of releasing. In this paper, I analyze what gives Genshinn Impact the "impact" it has on mobile gaming industry, as well as exploring several pioneers before it</h3>
+                </a>
+            </div>
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')" onmousedown="OpenPage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F374320%2FDARK_SOULS_III%2F&psig=AOvVaw1GvPKlZoT-thOqc2Mu6uhT&ust=1639246106577000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCPiO0OPp2fQCFQAAAAAdAAAAABAD')">
+                    <img src="images/DarkSouls3.jpg" alt="Dark Souls 3">
+                </a>
+                <div class="OpenSeg" id="GameNav2" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')" onmousedown="OpenPage('https://docs.google.com/document/d/1I2_5nacMAqVz12gy17Xcd9d9uAYPlUKWD-mVc1J2ArY/edit?usp=sharing')">
+                    <h2>Environmental storytelling of Dark Souls</h2>
+                    <h3>Not only known for its difficulty, Dark Souls is also known for its excellent storytelling without throwing the story at the player directly. In this paper, I use Dark Souls 3 as a case study to breakdown how Dark Souls uses environmental storytelling to tell its tales.</h3>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Thank you
+        </footer>
+    </div>
+
+    <script>
+        function OpenPan(panID)
+        {
+            document.getElementById(panID).style.flex = "3.4";
+        }
+
+        function ClosePan(panID)
+        {
+            document.getElementById(panID).style.flex = "0";
+        }
+
+        function ChangeNav()
+        {
+            if (document.getElementById("BookmarkNav").style.height > "0px")
+            {
+                document.getElementById("BookmarkNav").style.height = "0px"
+            }
+            else
+            {
+                document.getElementById("BookmarkNav").style.height = "500px";
+            }
+        }
+
+        function OpenPage(pageUrl)
+        {
+          window.open(pageUrl);
+        }
+
+    </script>
+</body>
+
+</html>

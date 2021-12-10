@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jim Do Portfolio</title>
+    <meta name="author" content="Jim Do">
+    <meta name="description" content="This is my Portfolio">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="Container">
+        <nav class="BookmarkNavBar" >
+           <!-- bookmark menu section -->
+            <ul id="BookmarkNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">My Games</a></li>
+                <li><a href="research.html">My Researches</a></li>
+                <li><a href="skill.html">My Skillset</a></li>
+                <li><a href="academic.html">My Academic</a></li>
+            </ul>
+                
+            <div id="MenuButton">
+                <a href="javascript:void(0)" class="openNav" onclick="ChangeNav()">
+                    <h2>Menu</h2>
+                </a>
+            </div>
+            
+        </nav>
+
+        <header>
+
+        </header>
+
+        <div class="Starter">
+            <h1>Welcome to my Portfolio!</h1>
+            <h2>Section: Skillset</h2>
+        </div>
+
+        <div class="Intro">
+            <blockquote>
+                I have studied and used the following:
+            </blockquote>
+        </div>
+
+        <div class = "Content">
+            <!--Segment class will be the central piece of the website, with most of the Javascript-->
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')" onmousedown="OpenPage('https://www.google.com/url?sa=i&url=https%3A%2F%2Funity3d.com%2Fbeta%2F2020.1b&psig=AOvVaw0uUeaqI5JhlHDqrx6V7q1U&ust=1639251747027000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCIi4veb-2fQCFQAAAAAdAAAAABAD')">
+                    <img src="images/Unity.jpg" alt="Unity3D">
+                </a>
+                <div class="OpenSeg" id="GameNav1" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')">
+                    <h2>Unity3D Engine</h2>
+                    <h3>I'm used to using Unity Engine. I have made 2 published games with Unity and experience with Nav Agents.</h3>
+                </div>
+            </div>
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')" onmousedown="OpenPage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F585410%2FGameMaker_Studio_2_Desktop%2F&psig=AOvVaw2A47PuO4krjARJ4c8Y3BZB&ust=1639252176936000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCIiGtLGA2vQCFQAAAAAdAAAAABAD')">
+                    <img src="images/GamemakerStudio.jpg" alt="GamemakerStudio">
+                </a>
+                <div class="OpenSeg" id="GameNav2" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')">
+                    <h2>Gamemaker Studio</h2>
+                    <h3>I have made several games with Gamemaker Studio using Gamemaker Language.</h3>
+                </div>
+            </div>
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav3')" onmouseleave="ClosePan('GameNav3')" onmousedown="OpenPage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.blender.org%2F&psig=AOvVaw2ofTTfQHORmxSlBCjuJGuQ&ust=1639252371653000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCNC9zY-B2vQCFQAAAAAdAAAAABAD')">
+                    <img src="images/Blender.jpg" alt="Blender">
+                </a>
+                <div class="OpenSeg" id="GameNav3" href="javascript:void(0)" onmouseenter="OpenPan('GameNav3')" onmouseleave="ClosePan('GameNav3')">
+                    <h2>Blender</h2>
+                    <h3>All models in my 3D games are made with Blender. I have experience with modeling and rigging characters.</h3>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Thank you
+        </footer>
+    </div>
+
+    <script>
+        function OpenPan(panID)
+        {
+            document.getElementById(panID).style.flex = "3.4";
+        }
+
+        function ClosePan(panID)
+        {
+            document.getElementById(panID).style.flex = "0";
+        }
+
+        function ChangeNav()
+        {
+            if (document.getElementById("BookmarkNav").style.height > "0px")
+            {
+                document.getElementById("BookmarkNav").style.height = "0px"
+            }
+            else
+            {
+                document.getElementById("BookmarkNav").style.height = "500px";
+            }
+        }
+
+        function OpenPage(pageUrl)
+        {
+            window.open(pageUrl);
+        }
+    </script>
+</body>
+
+</html>
