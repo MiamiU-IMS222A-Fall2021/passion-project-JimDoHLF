@@ -8,7 +8,6 @@
     <title>Jim Do Portfolio</title>
     <meta name="author" content="Jim Do">
     <meta name="description" content="This is my Portfolio">
-    <link ref="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -50,27 +49,30 @@
         <div class = "Content">
             <!--Segment class will be the central piece of the website, with most of the Javascript-->
             <div class="Segment">
-                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')">
- 
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')" onmousedown="OpenPage('https://www.google.com/url?sa=i&url=https%3A%2F%2Funity3d.com%2Fbeta%2F2020.1b&psig=AOvVaw0uUeaqI5JhlHDqrx6V7q1U&ust=1639251747027000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCIi4veb-2fQCFQAAAAAdAAAAABAD')">
+                    <img src="images/Unity.jpg" alt="Unity3D">
                 </a>
-                <div class="OpenSeg" id="GameNav1">
-                    Unity3D Engine
+                <div class="OpenSeg" id="GameNav1" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')">
+                    <h2>Unity3D Engine</h2>
+                    <h3>I'm used to using Unity Engine. I have made 2 published games with Unity and experience with Nav Agents.</h3>
                 </div>
             </div>
             <div class="Segment">
-                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')">
- 
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')" onmousedown="OpenPage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F585410%2FGameMaker_Studio_2_Desktop%2F&psig=AOvVaw2A47PuO4krjARJ4c8Y3BZB&ust=1639252176936000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCIiGtLGA2vQCFQAAAAAdAAAAABAD')">
+                    <img src="images/GamemakerStudio.jpg" alt="GamemakerStudio">
                 </a>
-                <div class="OpenSeg" id="GameNav2">
-                    Gamemaker Studio
+                <div class="OpenSeg" id="GameNav2" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')">
+                    <h2>Gamemaker Studio</h2>
+                    <h3>I have made several games with Gamemaker Studio using Gamemaker Language.</h3>
                 </div>
             </div>
             <div class="Segment">
-                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav3')" onmouseleave="ClosePan('GameNav3')">
- 
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav3')" onmouseleave="ClosePan('GameNav3')" onmousedown="OpenPage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.blender.org%2F&psig=AOvVaw2ofTTfQHORmxSlBCjuJGuQ&ust=1639252371653000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCNC9zY-B2vQCFQAAAAAdAAAAABAD')">
+                    <img src="images/Blender.jpg" alt="Blender">
                 </a>
-                <div class="OpenSeg" id="GameNav3">
-                    Blender
+                <div class="OpenSeg" id="GameNav3" href="javascript:void(0)" onmouseenter="OpenPan('GameNav3')" onmouseleave="ClosePan('GameNav3')">
+                    <h2>Blender</h2>
+                    <h3>All models in my 3D games are made with Blender. I have experience with modeling and rigging characters.</h3>
                 </div>
             </div>
         </div>
@@ -103,6 +105,10 @@
             }
         }
 
+        function OpenPage(pageUrl)
+        {
+            window.open(pageUrl);
+        }
     </script>
 </body>
 

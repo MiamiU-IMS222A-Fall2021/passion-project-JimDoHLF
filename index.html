@@ -8,7 +8,6 @@
     <title>Jim Do Portfolio</title>
     <meta name="author" content="Jim Do">
     <meta name="description" content="This is my Portfolio">
-    <link ref="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -48,7 +47,53 @@
         </div>
 
         <div class = "Content">
+            <!--Segment class will be the central piece of the website, with most of the Javascript-->
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')">
+                    <iframe src="game.html" title="My games"></iframe>
+                </a>
+                <a class="OpenSeg" id="GameNav1" href="javascript:void(0)" onmouseenter="OpenPan('GameNav1')" onmouseleave="ClosePan('GameNav1')">
+                    <!--This segment has javascript function OpenPan so users can hover the cursor over and keep the preview open-->
+                    <h2>Game Page preview</h2>
+                    <h3>List of the games I have shipped!</h3>
+                </a>
+            </div>
             
+            <!--Segment class will be the central piece of the website, with most of the Javascript-->
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')">
+                    <iframe src="research.html" title="My researches"></iframe>
+                </a>
+                <a class="OpenSeg" id="GameNav2" href="javascript:void(0)" onmouseenter="OpenPan('GameNav2')" onmouseleave="ClosePan('GameNav2')">
+                    <!--This segment has javascript function OpenPan so users can hover the cursor over and keep the preview open-->
+                    <h2>Researches Page preview</h2>
+                    <h3>Several research and analysis papers I have written!</h3>
+                </a>
+            </div>
+            
+            <!--Segment class will be the central piece of the website, with most of the Javascript-->
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav3')" onmouseleave="ClosePan('GameNav3')">
+                    <iframe src="skill.html" title="My skills"></iframe>
+                </a>
+                <a class="OpenSeg" id="GameNav3" href="javascript:void(0)" onmouseenter="OpenPan('GameNav3')" onmouseleave="ClosePan('GameNav3')">
+                    <!--This segment has javascript function OpenPan so users can hover the cursor over and keep the preview open-->
+                    <h2>Skills Page preview</h2>
+                    <h3>List of my Skillset!</h3>
+                </a>
+            </div>
+            
+            <!--Segment class will be the central piece of the website, with most of the Javascript-->
+            <div class="Segment">
+                <a class="SegPreview" href="javascript:void(0)" onmouseenter="OpenPan('GameNav4')" onmouseleave="ClosePan('GameNav4')">
+                    <iframe src="academic.html" title="My games"></iframe>
+                </a>
+                <a class="OpenSeg" id="GameNav4" href="javascript:void(0)" onmouseenter="OpenPan('GameNav4')" onmouseleave="ClosePan('GameNav4')">
+                    <!--This segment has javascript function OpenPan so users can hover the cursor over and keep the preview open-->
+                    <h2>Academic Page preview</h2>
+                    <h3>List of my academic achivements!</h3>
+                </a>
+            </div>
         </div>
 
         <footer>
